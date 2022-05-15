@@ -3,7 +3,7 @@ import './category-item.styles.scss';
 const CategoryItem = ({ catagory }) => {
     const { title, imageUrl } = catagory;
 
-    return(
+    return (
         <div className="category-container">
             <div 
                 className="background-image" 
@@ -16,7 +16,7 @@ const CategoryItem = ({ catagory }) => {
                 <p>Shop Now</p>
             </div>
         </div>
-    )
+    );
 };
 
 export default CategoryItem;
