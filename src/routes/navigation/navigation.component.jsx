@@ -8,20 +8,25 @@ const Navigation = () => {
     return (
         <Fragment>
             <div className="navigation">
-                <Link className="logo-container" to="/">
-                    <CrwnLogo className="logo"/>
-                </Link>
+                <div className="header-container">
+                    <Link className="logo-container" to="/">
+                        <CrwnLogo className="logo"/>
+                    </Link>
+                    <h1>CRWN-CLOTHING</h1>
+                </div>
                 <div className="nav-links-container">
+                    <Link className="nav-link" to="/">
+                        HOME
+                    </Link>
                     <Link className="nav-link" to="/shop">
                         SHOP
                     </Link>
-                    <Link className="nav-link" to="/sign-in">
+                    <Link className="nav-link" to="/auth">
                         SIGN IN
                     </Link>
                 </div>
             </div>
             <Outlet />
-            <footer>Jen Chen @ 2022</footer>
         </Fragment>
     );
 };
