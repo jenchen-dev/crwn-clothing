@@ -1,0 +1,29 @@
+.category-title {
+    font-size: 38px;
+    text-align: center;
+    text-decoration: underline;
+    margin: 0px;
+}
+
+.go-back-link {
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-align: end;
+
+    a {
+        font-size: 20px;
+        color: gray;
+
+        &:hover {
+            color: darkgray;
+        }
+    }
+}
+
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 50px;
+    margin-bottom: 50px;
+}

@@ -1,0 +1,33 @@
+.category-preview-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    h2 {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+
+        .title {
+            font-size: 28px;
+        }
+
+        .see-more-link {
+            font-size: 20px;
+            font-weight: 100;
+            color: gray;
+            cursor: pointer;
+
+            &:hover {
+                color: darkgray;
+            }
+
+        }
+    }
+
+    .preview {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 20px;
+    }
+}
