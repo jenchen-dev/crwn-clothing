@@ -22,7 +22,7 @@ const Category = () => {
             </h2>
             <div className='go-back-link'>
                 <Link to="/shop">
-                    {`< back to shop`}
+                    &#10094; {`back to shop`}
                 </Link>
             </div>
             <div className="category-container">
