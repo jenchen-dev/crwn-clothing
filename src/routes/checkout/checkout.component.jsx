@@ -9,6 +9,8 @@ import './checkout.styles.scss';
 
 const CheckOut = () => {
     const { cartItems, cartTotal } = useContext(CartContext);
+    const discount = cartTotal*0.3
+    const finalAmount = cartTotal*0.7
 
     return(
         <div className='checkout-container'>
@@ -42,7 +44,11 @@ const CheckOut = () => {
                     </div>
                 )
             }
-            <span className='total'>Total: $ {cartTotal}</span>
+            <div className="amount-section">
+                <span className='total'>Amount: $ {cartTotal}</span>
+                <span className='discount'>* 30% off: $ {discount}</span>
+                <span className='final'>Total: $ {finalAmount}</span>
+            </div>
         </div>
     );
 };

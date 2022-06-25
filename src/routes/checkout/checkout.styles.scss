@@ -29,9 +29,28 @@
         color: darkgray;
     }
 
-    .total {
+    .amount-section {
+        display: flex;
+        flex-direction: column;
+        text-align: end;
         margin-top: 30px;
         margin-left: auto;
-        font-size: 36px;
+
+        .total {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .discount {
+            color: red;
+            font-weight: bolder;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        .final {
+            font-size: 30px;
+        }
+        
     }
 }

@@ -13,7 +13,7 @@
 .wrapper {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
     .prev,.next {
         font-size: 30px;
@@ -33,29 +33,40 @@
     }
     
     .next {
-        margin-left: 5px;
+        margin-left: 10px;
     }
     
     .prev {
-        margin-right: 5px;
+        margin-right: 10px;
     }
     
     .image-container {
         vertical-align: middle;
         display: inline-block;
-        width: 70%;
+        width: 830px;
         white-space: nowrap;
         overflow-x: hidden;
         overflow-y: hidden;
 
+        scroll-snap-type: x mandatory;
+        white-space: nowrap;
+
         .image {
-            height: 100px;
-            width: 100px;
+            height: 180px;
+            width: 150px;
             font-size: 25px;
             background: darkgray;
             margin: 10px;
             display: inline-block;
             line-height: 100px;
+
+            scroll-snap-align: start;
         }
     }
+}
+
+.discount-message {
+    color: red;
+    font-weight: bolder;
+    margin-bottom: 20px;
 }
