@@ -6,6 +6,7 @@ const BannerCard = ({ products }) => {
             {
                 products && products.map((product) => (
                     <img
+                        key={product.name}
                         className="image"
                         src={product.imageUrl}
                         alt={`${product.name}`}
